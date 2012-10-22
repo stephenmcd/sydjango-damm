@@ -1,0 +1,44 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+
+{% block title %}{{ title }} | {% trans 'SyDjango site admin' %}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">{% trans 'SyDjango Rocks' %}</h1>
+<style>
+
+* {font-family:georgia, sans-serif;}
+body {background: #f9f9f9;}
+#header {border-bottom:2px solid #444;
+         background: -webkit-linear-gradient(top, rgba(0,0,0,.9) 0%,
+                                             rgba(0,0,0,.6) 100%);}
+#header * {font-size:16px; color:#eee;}
+#header a {color:#aaa !important;}
+h1 {font-size:24px !important; margin:20px 5px;}
+#branding h1 {font-size:28px !important; margin:15px 10px;
+              color:#fff; float:left;}
+.custom-nav {float:left; margin-top:26px;}
+.custom-nav li {display:inline; margin-left:20px; list-style-type:disc;}
+.custom-nav li, .custom-nav a {font-size:22px !important;}
+#user-tools {margin:5px 10px;}
+.breadcrumbs {padding:15px 20px !important; word-spacing:5px;}
+.breadcrumbs, .breadcrumbs * {font-size:16px !important;}
+.breadcrumbs a {margin-right:-5px;}
+.object-tools a {font-size:12px !important; line-height:16px !important;}
+.module, fieldset {margin-bottom:20px;
+                   box-shadow:5px 5px 20px 0 rgba(0,0,0,.4);}
+#content * {border-radius:5px; font-size:15px;
+            line-height:24px; font-weight:normal;}
+caption, caption * {background:#999 none !important;
+                    font-size:18px !important;}
+.dashboard caption, .dashboard th, .dashboard td {
+    text-indent:10px; padding:10px 5px;}
+textarea {width:80% !important; height:370px;}
+.vDateField, .vTimeField {width:100px;}
+.paginator .default, .submit-row input {padding:10px 20px !important;
+                                        background-image:none !important;}
+.paginator .default, .submit-row .default {padding:8px 30px !important;}
+.deletelink-box {margin-top:12px !important;}
+
+</style>
+{% endblock %}
