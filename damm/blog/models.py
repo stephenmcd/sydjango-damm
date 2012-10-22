@@ -12,3 +12,8 @@ class BlogPost(models.Model):
 
     def __unicode__(self):
         return self.title
+
+    def admin_link(self):
+        return "<a href='#'>View on site</a>"
+    admin_link.allow_tags = True
+    admin_link.short_description = ""
