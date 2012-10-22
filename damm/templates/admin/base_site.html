@@ -40,5 +40,9 @@ textarea {width:80% !important; height:370px;}
 .paginator .default, .submit-row .default {padding:8px 30px !important;}
 .deletelink-box {margin-top:12px !important;}
 
+{% if singleton %}
+.deletelink-box, .submit-row input:not(.default) {display:none;}
+{% endif %}
+
 </style>
 {% endblock %}

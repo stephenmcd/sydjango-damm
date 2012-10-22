@@ -17,3 +17,14 @@ class BlogPost(models.Model):
         return "<a href='#'>View on site</a>"
     admin_link.allow_tags = True
     admin_link.short_description = ""
+
+
+class Homepage(models.Model):
+
+    content = models.TextField()
+
+    class Meta:
+        verbose_name_plural = "Homepage"
+
+    def __unicode__(self):
+        return ""

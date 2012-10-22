@@ -1,4 +1,3 @@
 syntax: glob
 *.db
 local_settings.py
-fixtures
