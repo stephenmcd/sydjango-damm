@@ -5,6 +5,13 @@
 
 {% block branding %}
 <h1 id="site-name">{% trans 'SyDjango Rocks' %}</h1>
+{% if user.is_staff %}
+<ul class="custom-nav">
+<li>&bull; <a href="{% url admin:blog_homepage_changelist %}">Homepage</a></li>
+<li>&bull; <a href="{% url admin:blog_blogpost_changelist %}">Posts</a></li>
+<li>&bull; <a href="{% url admin:auth_user_changelist %}">Users</a></li>
+</ul>
+{% endif %}
 <style>
 
 * {font-family:georgia, sans-serif;}
