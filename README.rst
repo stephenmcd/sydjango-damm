@@ -17,5 +17,5 @@ classes, building up to much more featureful and attractive
 admin interface.
 
 Check out my corresponding blog post `Django Admin: The Missing
-Manual <http://blog.jupo.org/2012/10/26/sydjango-talk-django-admin-the-missing-manual/>`_,
+Manual <http://blog.jupo.org/2012/10/26/sydjango-talk-django-admin-missing-manual/>`_,
 which contains slides and video for the talk.
